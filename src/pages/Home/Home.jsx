@@ -23,7 +23,8 @@ const Home = () => {
     );
     setTableData(response.data);
 }catch(error){
-    console.error("Data is not fetcing "+ error)
+    console.error("failed to fetch data "+ error);
+    alert("failed to fetch data");
 }
   };
 
